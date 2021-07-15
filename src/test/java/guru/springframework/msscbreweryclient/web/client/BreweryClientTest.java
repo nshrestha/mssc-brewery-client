@@ -28,7 +28,7 @@ class BreweryClientTest {
         BeerDto beerDto = BeerDto.builder().beerName("New Beer").build();
         URI uri = client.saveBeer(beerDto);
         assertNotNull(uri);
-        System.out.println(uri.toString());
+        System.out.println(uri);
     }
 
 
@@ -55,7 +55,7 @@ class BreweryClientTest {
         CustomerDto customerDto = CustomerDto.builder().name("Jim").build();
         URI uri = client.saveNewCustomer(customerDto);
         assertNotNull(uri);
-        System.out.println(uri.toString());
+        System.out.println(uri);
     }
 
     @Test
